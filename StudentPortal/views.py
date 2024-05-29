@@ -167,7 +167,7 @@ def csc_1st_years(request):
 
 
 
-# LOGIC FOR CSE STUDENTS
+# LOGIC FOR CSE STUDENT
 def cse_4th_years(request):
     cse_year_4th = Student.objects.order_by('registration_id').filter(studying_year='4th Year', section='CSE')
     student_count = cse_year_4th.count()
